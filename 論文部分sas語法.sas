@@ -1,32 +1,32 @@
-/*ªù«æ¶E*/
-LIBNAME OPD_ "C:\Users\User\Desktop\¼ÒÀÀ¼Æ¾ÚÀÉ\Health-01";
-/*¦í°|*/
-LIBNAME INPD_ "C:\Users\User\Desktop\¼ÒÀÀ¼Æ¾ÚÀÉ\Health-02";
-/*©Ó«OÀÉ*/
-LIBNAME ENROL_ "C:\Users\User\Desktop\¼ÒÀÀ¼Æ¾ÚÀÉ\Health-07";
-/*¦º¦]*/
-LIBNAME DEA_ "C:\Users\User\Desktop\¼ÒÀÀ¼Æ¾ÚÀÉ\Health-10";
-/*µûÅ²µ¥¯Å*/
-LIBNAME HOSB_ "C:\Users\User\Desktop\¼ÒÀÀ¼Æ¾ÚÀÉ\Health-11";(¨S¥~ÄÀ);
-/*Àù¯g³õªíLF*/
-LIBNAME CRC_ "C:\Users\User\Desktop\¼ÒÀÀ¼Æ¾ÚÀÉ\Health-14";
-/*Àù¯gµn°O¦~³ø*/
-LIBNAME CRTX_ "C:\Users\User\Desktop\¼ÒÀÀ¼Æ¾ÚÀÉ\Health-45";
-/*­Ó¤HÄÝ©Ê*/
-LIBNAME SOC_ "C:\Users\User\Desktop\¼ÒÀÀ¼Æ¾ÚÀÉ\Socity09";
+/*é–€æ€¥è¨º*/
+LIBNAME OPD_ "C:\Users\User\Desktop\æ¨¡æ“¬æ•¸æ“šæª”\Health-01";
+/*ä½é™¢*/
+LIBNAME INPD_ "C:\Users\User\Desktop\æ¨¡æ“¬æ•¸æ“šæª”\Health-02";
+/*æ‰¿ä¿æª”*/
+LIBNAME ENROL_ "C:\Users\User\Desktop\æ¨¡æ“¬æ•¸æ“šæª”\Health-07";
+/*æ­»å› */
+LIBNAME DEA_ "C:\Users\User\Desktop\æ¨¡æ“¬æ•¸æ“šæª”\Health-10";
+/*è©•é‘‘ç­‰ç´š*/
+LIBNAME HOSB_ "C:\Users\User\Desktop\æ¨¡æ“¬æ•¸æ“šæª”\Health-11";(æ²’å¤–é‡‹);
+/*ç™Œç—‡å ´è¡¨LF*/
+LIBNAME CRC_ "C:\Users\User\Desktop\æ¨¡æ“¬æ•¸æ“šæª”\Health-14";
+/*ç™Œç—‡ç™»è¨˜å¹´å ±*/
+LIBNAME CRTX_ "C:\Users\User\Desktop\æ¨¡æ“¬æ•¸æ“šæª”\Health-45";
+/*å€‹äººå±¬æ€§*/
+LIBNAME SOC_ "C:\Users\User\Desktop\æ¨¡æ“¬æ•¸æ“šæª”\Socity09";
 
 /*COPY*/
-LIBNAME DATAID 'C:\Users\User\Desktop\¸ê¬ì¤¤¤ß\½m²ß\DATAID';
-LIBNAME DATAOP 'C:\Users\User\Desktop\¸ê¬ì¤¤¤ß\½m²ß\DATAOP';
-LIBNAME DATAINP 'C:\Users\User\Desktop\¸ê¬ì¤¤¤ß\½m²ß\DATAINP';
-LIBNAME DATAHSDC 'C:\Users\User\Desktop\¸ê¬ì¤¤¤ß\½m²ß\DATAHSDC';
+LIBNAME DATAID 'C:\Users\User\Desktop\è³‡ç§‘ä¸­å¿ƒ\ç·´ç¿’\DATAID';
+LIBNAME DATAOP 'C:\Users\User\Desktop\è³‡ç§‘ä¸­å¿ƒ\ç·´ç¿’\DATAOP';
+LIBNAME DATAINP 'C:\Users\User\Desktop\è³‡ç§‘ä¸­å¿ƒ\ç·´ç¿’\DATAINP';
+LIBNAME DATAHSDC 'C:\Users\User\Desktop\è³‡ç§‘ä¸­å¿ƒ\ç·´ç¿’\DATAHSDC';
 
-LIBNAME DATAMEN 'C:\Users\User\Desktop\¸ê¬ì¤¤¤ß\½m²ß\DATAMEN';
-LIBNAME DATACAN 'C:\Users\User\Desktop\¸ê¬ì¤¤¤ß\½m²ß\DATACAN';
-LIBNAME ALLDATA 'C:\Users\User\Desktopl\¸ê¬ì¤¤¤ß\½m²ß\ALLDATA';
-LIBNAME CCI 'C:\Users\User\Desktop\¸ê¬ì¤¤¤ß\½m²ß\CCI';
+LIBNAME DATAMEN 'C:\Users\User\Desktop\è³‡ç§‘ä¸­å¿ƒ\ç·´ç¿’\DATAMEN';
+LIBNAME DATACAN 'C:\Users\User\Desktop\è³‡ç§‘ä¸­å¿ƒ\ç·´ç¿’\DATACAN';
+LIBNAME ALLDATA 'C:\Users\User\Desktopl\è³‡ç§‘ä¸­å¿ƒ\ç·´ç¿’\ALLDATA';
+LIBNAME CCI 'C:\Users\User\Desktop\è³‡ç§‘ä¸­å¿ƒ\ç·´ç¿’\CCI';
 
-/*¦X¨Ö HEALTH-07_©Ó«OÀÉ(¤ë¥÷) NHI_ENROL to ¦~¥÷ */
+/*åˆä½µ HEALTH-07_æ‰¿ä¿æª”(æœˆä»½) NHI_ENROL to å¹´ä»½ */
 %MACRO ID94_99; 
 	%DO A= 94 %TO 99; 
 		DATA DATAID.ID&A.; 
@@ -55,8 +55,8 @@ DATA DATAID.ID_ALL;
 			DATAID.ID99 DATAID.ID100 DATAID.ID101 DATAID.ID102 DATAID.ID103 DATAID.ID104;
 	RUN;
 
-/*¦X¨Ö HEALTH-01_ªù«æ¶E(¤ë¥÷) NHI_ENROL to ¦~¥÷ */
-	/* _10 ¦èÂå  _20 ¤úÂå  _30 ¤¤Âå */
+/*åˆä½µ HEALTH-01_é–€æ€¥è¨º(æœˆä»½) NHI_ENROL to å¹´ä»½ */
+	/* _10 è¥¿é†«  _20 ç‰™é†«  _30 ä¸­é†« */
 %MACRO OP94_99; 
 	%DO A= 94 %TO 99; 
 		DATA DATAOP.OP&A.; 
@@ -107,7 +107,7 @@ DATA DATAOP.OP_ALL;
 			DATAOP.OP99 DATAOP.OP100 DATAOP.OP101 DATAOP.OP102 DATAOP.OP103 DATAOP.OP104;
 	RUN;
 
-/*¦X¨Ö HEALTH-02_¦èÂå¦í°| NHI_IPDTE to single data*/
+/*åˆä½µ HEALTH-02_è¥¿é†«ä½é™¢ NHI_IPDTE to single data*/
 %MACRO INP94_99; 
 	%DO A= 94 %TO 99; 
 		DATA DATAINP.INPALL_1; 
@@ -131,7 +131,7 @@ DATA DATAINP.INPALL;
 	SET DATAINP.INPALL_1 DATAINP.INPALL_2;
 	RUN;
 
-/*¦X¨Ö  yearly HEALTH-11 µûÅ²µ¥¯Å DOH_HOSB to single data*/
+/*åˆä½µ  yearly HEALTH-11 è©•é‘‘ç­‰ç´š DOH_HOSB to single data*/
 %MACRO HOSB; 
 	%DO A= 94 %TO 99; 
 		DATA DATAHSDC.HOSB_ALL_1; 
@@ -152,7 +152,7 @@ DATA DATAHSDC.HOSB_ALL;
 	SET DATA DATAHSDC.HOSB_ALL_1 DATA DATAHSDC.HOSB_ALL_2;
 	RUN;
 
-/*¦X¨Ö yearly SOCIETY-09 ­Ó¤HÄÝ©ÊÀÉ  to single data*/
+/*åˆä½µ yearly SOCIETY-09 å€‹äººå±¬æ€§æª”  to single data*/
 %MACRO SOC; 
 	%DO A= 94 %TO 99; 
 		DATA DATAHSDC.SOC_ALL_1; 
@@ -173,7 +173,7 @@ DATA DATAHSDC.SOC_ALL;
 	SET DATA DATAHSDC.SOC_ALL_1 DATAHSDC.SOC_ALL_2;
 	RUN;
 
-/*¦X¨Ö yearly HEALTH-10 ¦º¦]ÀÉ  DEATH to single data*/
+/*åˆä½µ yearly HEALTH-10 æ­»å› æª”  DEATH to single data*/
 %MACRO DEA; 
 	%DO A= 94 %TO 99; 
 		DATA DATAHSDC.DEA_ALL_1; 
@@ -194,8 +194,8 @@ DATA DATAHSDC.DEA_ALL;
 	SET DATAHSDC.DEA_ALL_1 DATAHSDC.DEA_ALL_2;
 	RUN;
 
-/*¦X¨Ö yearly CANCER to single data*/
-/*HEALTH-14 Àù¯gµn°OªøªíLF*/
+/*åˆä½µ yearly CANCER to single data*/
+/*HEALTH-14 ç™Œç—‡ç™»è¨˜é•·è¡¨LF*/
 %MACRO CRCMAIN; 
 	%DO A= 101 %TO 101; 
 		DATA DATAHSDC.CRC_ALL; 
@@ -204,7 +204,7 @@ DATA DATAHSDC.DEA_ALL;
 		RUN; 
 	%END; 
 %MEND; %CRCMAIN; 
-/*HEALTH-45 Àù¯gµn°O¦~³ø*/
+/*HEALTH-45 ç™Œç—‡ç™»è¨˜å¹´å ±*/
 %MACRO CRTREAT; 
 	%DO A= 101 %TO 101; 
 		DATA DATAHSDC.CRTX_ALL; 
@@ -215,7 +215,7 @@ DATA DATAHSDC.DEA_ALL;
 %MEND; %CRTREAT;
 
 /*============= DATA MERGE =============*/
-/*Merge ID with Society(­Ó¤HÄÝ©Ê)*/
+/*Merge ID with Society(å€‹äººå±¬æ€§)*/
 	/*ID+SOC=ID_SOC*/
 PROC SORT DATA=DATAID.ID_ALL;
 	BY ID;
@@ -238,7 +238,7 @@ DATA DATAID.ID_SOC;
 	IF A ;
 	RUN;
 
-/*Merge OUTPATIENT(ªù«æ¶E) with HOSB then with IDSOC*/
+/*Merge OUTPATIENT(é–€æ€¥è¨º) with HOSB then with IDSOC*/
 	/*OP+HOSB=OP_HOS*/
 PROC SORT DATA=DATAHSDC.HOSB_ALL;
 	BY HOSP_ID;
@@ -309,7 +309,7 @@ DATA DATAINP.ID_INP_H;
 	RENAME IN_AGE=AGE;
 	RUN;
 
-/*Merge-Stack OP and INP as ALL_1(ªù«æ¶E+¦í°|=ALL)*/
+/*Merge-Stack OP and INP as ALL_1(é–€æ€¥è¨º+ä½é™¢=ALL)*/
 DATA ALLDATA.ALL_1;
 	SET DATAOP.ID_OP_H DATAINP.ID_INP_H;
 	RUN;
@@ -317,14 +317,14 @@ PROC SORT DATA=ALLDATA.ALL_1;
 	BY ID;
 	RUN;
 
-/*±Æ°£20·³¥H¤UªÌ*/
+/*æŽ’é™¤20æ­²ä»¥ä¸‹è€…*/
 DATA ALLDATA.ALL_2;
 	SET ALLDATA.ALL_1;
 	IF AGE>=20 THEN OUTPUT;
 	RUN;
 
-/*ºë¯«¯e¯f*/
-	/*¼Ð°Oºë¯«¯e¯f*/
+/*ç²¾ç¥žç–¾ç—…*/
+	/*æ¨™è¨˜ç²¾ç¥žç–¾ç—…*/
 DATA ALLDATA.ALL_3;
 	SET ALLDATA.ALL_2;
 	IF	
@@ -350,13 +350,13 @@ DATA ALLDATA.ALL_3;
 		,'310','311','312','313','314','315','316','317','318','319')
 	THEN MENTAL=1; 
 	RUN;
-	/*¨ú¥XONLYºë¯«¯e¯f*/
+	/*å–å‡ºONLYç²¾ç¥žç–¾ç—…*/
 DATA DATAMEN.MENTAL_1; 
 	SET ALLDATA.ALL_3;
 	IF MENTAL=1 THEN OUTPUT; 
 	RUN;
 
-/*­pºâ´NÂå¦¸¼Æ*/
+/*è¨ˆç®—å°±é†«æ¬¡æ•¸*/
 PROC SORT DATA=DATAMEN.MENTAL_1; 
 	BY ID FUNC_DATE; 
 	RUN; 
@@ -399,8 +399,8 @@ PROC FREQ DATA =  DATAMEN.MENTAL_FIRST_1;
         RUN;
 TITLE;
 
-/*Àù¯g*/
-	/*¼Ð°OÀù¯g*/ 
+/*ç™Œç—‡*/
+	/*æ¨™è¨˜ç™Œç—‡*/ 
 DATA ALLDATA.ALL_4;
 	SET ALLDATA.ALL_3;
 	IF	
@@ -447,12 +447,12 @@ DATA ALLDATA.ALL_4;
 	THEN CANCER=1;
 	RUN;
 
-/*¨ú¥XÀù¯g*/
+/*å–å‡ºç™Œç—‡*/
 DATA DATACAN.CANCER_1; 
 	SET ALLDATA.ALL_4;
 	IF CANCER=1 THEN OUTPUT; 
 	RUN;
-/*±Æ°£176-187,198.6,198.82 Cancers*/
+/*æŽ’é™¤176-187,198.6,198.82 Cancers*/
 DATA DATACAN.CANCER_1; 
 	SET DATACAN.CANCER_1; 
 	IF 
@@ -474,7 +474,7 @@ DATA DATACAN.CANCER_1;
 	THEN EXCLUD=1;
 	RUN;	
 
-/*­pºâÀù¯g´NÂå¦¸¼Æ*/
+/*è¨ˆç®—ç™Œç—‡å°±é†«æ¬¡æ•¸*/
 PROC SORT DATA=DATACAN.CANCER_1; 
 	BY ID FUNC_DATE; 
 	RUN; 
@@ -505,7 +505,7 @@ DATA DATACAN.CANCER_2;
 PROC SORT DATA=DATACAN.CANCER_2; 
 	BY ID FUNC_DATE; 
 	RUN; 
-	/*¨ú First ID*/
+	/*å– First ID*/
 DATA DATACAN.CANCER_FIRST_1; 
 	SET DATACAN.CANCER_2; 
 	IF FIRST.ID THEN OUTPUT; 
@@ -591,7 +591,7 @@ TITLE;
 
 
 /******************************************************/
-/*±Æ°£«e¨â¦~¿©±wºë¯«¯e¯f©ÎÀù¯gªÌ*/
+/*æŽ’é™¤å‰å…©å¹´ç½¹æ‚£ç²¾ç¥žç–¾ç—…æˆ–ç™Œç—‡è€…*/
 /*MEN+CAN=MC*/
 DATA DATACAN.CANCER_FIRST;
 		RENAME FUNC_DATE=CAN_DATE;
@@ -611,7 +611,7 @@ DATA ALLDATA.MC;
 		BY ID ;
 		RUN;
 
-/*§â¤jÀÉ¦³¿©¯fªÌ¼Ð°O*/
+/*æŠŠå¤§æª”æœ‰ç½¹ç—…è€…æ¨™è¨˜*/
 DATA ALLDATA.MC;
         SET ALLDATA.MC;
 		DISEASE=1;
@@ -648,20 +648,20 @@ DATA ALLDATA.ALL_CONTROLS;
 PROC SORT DATA=ALLDATA.ALL_CONTROLS;
 		BY ID ;
 		RUN;
-/*CONTROL:¤]¥u§ì2007-2015¦~¥÷ªº´N¶E¬ö¿ý*/
+/*CONTROL:ä¹ŸåªæŠ“2007-2015å¹´ä»½çš„å°±è¨ºç´€éŒ„*/
 DATA ALLDATA.CONTROL ;
         SET ALLDATA.ALL_CONTROLS ;
         IF FIRST.ID THEN OUTPUT;
         BY ID;
         RUN;
 
-/*CASE:±Æ°£²Ä¤@¦¸´N¶E¤é´Á¬O«e¨â¦~(2005/2006)ªÌ*/
+/*CASE:æŽ’é™¤ç¬¬ä¸€æ¬¡å°±è¨ºæ—¥æœŸæ˜¯å‰å…©å¹´(2005/2006)è€…*/
 DATA ALLDATA.MC;
 		SET ALLDATA.MC;
 		IF SUBSTR(CAN_DATE,1,4) IN ('2005' '2006') OR SUBSTR(MEN_DATE,1,4) IN ('2005' '2006') OR EXCLUD=1 THEN DELETE;
 		RUN;
 
-/*§ä¥XLAST DATE*/
+/*æ‰¾å‡ºLAST DATE*/
 DATA DATAMEN.MENTAL_LAST;
 	SET DATAMEN.MENTAL_1; 
 	IF LAST.ID THEN OUTPUT; 
@@ -698,7 +698,7 @@ DATA ALLDATA.ALL_LAST;
 	BY ID;
 	RUN;
 
-/*================Split Cohort Types ¿©±wMD©ÎCANCER¤À²Õ½s¸¹================*/
+/*================Split Cohort Types ç½¹æ‚£MDæˆ–CANCERåˆ†çµ„ç·¨è™Ÿ================*/
 /*Type1 = Mental Only ----*/
 /*Type2 = Cancer Only----*/
 /*Type3 = Cancer -> Mental ---*/ 
@@ -713,7 +713,7 @@ DATA ALLDATA.MC_1;
 	ELSE IF MEN_DATE=CAN_DATE THEN DELETE;
 	RUN;
 
-/*±qX_TYPE=4¤¤¡A§ì¥XX_TYPE=5*/
+/*å¾žX_TYPE=4ä¸­ï¼ŒæŠ“å‡ºX_TYPE=5*/
 DATA ALLDATA.MC_TYPE_4;
 	SET ALLDATA.MC_1;
 	IF X_TYPE=4 THEN OUTPUT;
@@ -753,20 +753,20 @@ DATA ALLDATA.MC_12345;
 	RUN;
 
 
-/*¼Ð°O¦³¿©¯fªº¤HDISEASE="1"*/
+/*æ¨™è¨˜æœ‰ç½¹ç—…çš„äººDISEASE="1"*/
 DATA ALLDATA.MC_12345;
         SET ALLDATA.MC_12345;
         DISEASE=1;
         RUN;
 
-TITLE "¦U¿©¯f¶¶§Ç¤H¼Æ";
+TITLE "å„ç½¹ç—…é †åºäººæ•¸";
 PROC FREQ DATA=ALLDATA.MC_12345;
 	TABLES X_TYPE;
 	RUN;
 TITLE;
 
 /*======================DEATH==========================*/
-/*§ì¥X³Ì«á¦º¤`¤é´Á¨Ã¼Ð¥Ü¦º¤`*/
+/*æŠ“å‡ºæœ€å¾Œæ­»äº¡æ—¥æœŸä¸¦æ¨™ç¤ºæ­»äº¡*/
 PROC SORT DATA=DATAHSDC.DEA_ALL;
 	BY ID;
 	RUN;
@@ -785,19 +785,19 @@ DATA DATAHSDC.DEATH;
 	RENAME D_DATE=DEATH_DATE;
 	RUN;
 
-/*KEEP»Ý­nÅÜ¶µ*/
+/*KEEPéœ€è¦è®Šé …*/
 DATA DATAHSDC.DEATH_1;
         SET DATAHSDC.DEATH;
         KEEP ID DEATH DEATH_DATE;
         RUN;
 
-/*CASE+CONTROL(¤wFIRST.ID)*/
+/*CASE+CONTROL(å·²FIRST.ID)*/
 DATA ALLDATA.ALL_6;
         MERGE ALLDATA.CONTROL(IN=A)  ALLDATA.MC_12345(IN=B);
         BY ID;
         RUN;
 
-/*MERGE¦^¤jÀÉ*/
+/*MERGEå›žå¤§æª”*/
 PROC SORT DATA=ALLDATA.ALL_6;
         BY ID;
         RUN;
@@ -810,13 +810,13 @@ DATA ALLDATA.ALL_7;
         IF A;
         RUN;
 
-/*¼Ð°OµL¦º¤`ªº¤HDEATH="0"*/
+/*æ¨™è¨˜ç„¡æ­»äº¡çš„äººDEATH="0"*/
 DATA ALLDATA.ALL_7;
         SET ALLDATA.ALL_7;
         IF DEATH=. THEN DEATH=0;
         RUN;
 
-TITLE"¦º¤`¤H¼Æ";
+TITLE"æ­»äº¡äººæ•¸";
 PROC FREQ DATA=ALLDATA.ALL_7;
 	TABLE X_TYPE*DEATH;
 	RUN;
@@ -835,7 +835,7 @@ DATA CCI.CON_START;
         FIRST_IN_DATE=FUNC_DATE;
         RUN;
 
-/*±Æ§Ç*/
+/*æŽ’åº*/
 DATA CCI.START;
         SET CCI.CASE_START CCI.CON_START;
         RUN;
@@ -852,7 +852,7 @@ DATA CCI.START_1;
         IF B;
         RUN;
 
-/*¦¬®×«á¨â¦~¯Ç¤JCCI½d³ò*/
+/*æ”¶æ¡ˆå¾Œå…©å¹´ç´å…¥CCIç¯„åœ*/
 DATA CCI.START_2;
         SET CCI.START_1;
   	INDATE=INPUT(FUNC_DATE,YYMMDD10.);
@@ -860,7 +860,7 @@ DATA CCI.START_2;
   	IF 0<=INDATE-FIRSTDATE<=730 THEN OUTPUT ;
         RUN;
 
-	/*CCIµ¹¤À*/
+	/*CCIçµ¦åˆ†*/
 %MACRO CCI; 
 	%DO A= 1 %TO 5; 
 		DATA CCI.START_3;
@@ -891,14 +891,14 @@ DATA CCI.START_2;
 				THEN	ICD9CM_&A.='H1';
 			ELSE IF	SUBSTR(ICD9CM_&A.,1,4) IN ('5712','5714','5715','5716')
 				THEN	ICD9CM_&A.='I1';
-				/*DM(1¤À,J1)*/
+				/*DM(1åˆ†,J1)*/
 			ELSE IF	SUBSTR(ICD9CM_&A.,1,4) IN ('2500','2501','2502','2503','2507') 
 				THEN	ICD9CM_&A.='J1';
-				/*DM(1¤À,J1)*/
-				/*DM(2¤À,A2)*/
+				/*DM(1åˆ†,J1)*/
+				/*DM(2åˆ†,A2)*/
 			ELSE IF	SUBSTR(ICD9CM_&A.,1,4) IN ('2504','2505','2506') 
 				THEN	ICD9CM_&A.='A2';
-				/*DM(2¤À,A2)*/
+				/*DM(2åˆ†,A2)*/
 			ELSE IF	SUBSTR(ICD9CM_&A.,1,3) IN ('342') OR 
 							SUBSTR(ICD9CM_&A.,1,4) IN ('3441')
 				THEN	ICD9CM_&A.='B2';
@@ -935,7 +935,7 @@ DATA CCI.START_2;
 	%END; 
 %MEND; %CCI; 
 
-/*§âICD½s½X©î¶}¦b¦X¨Ö«á¨ú¥X²Ä¤@µ§*/
+/*æŠŠICDç·¨ç¢¼æ‹†é–‹åœ¨åˆä½µå¾Œå–å‡ºç¬¬ä¸€ç­†*/
 DATA CCI.CODE_1;
         SET CCI.START_3;
 	KEEP ID CODING ;
@@ -973,10 +973,10 @@ DATA CCI.CODE_ALL;
 	BY ID CODING;
 	RUN;
 
-/*¼Ð°O¯e¯f¯fµ{¦³ÅÜ¤ÆªÌ*/
-        /*´c©Ê¸~½F(D2)->Âà²¾©Ê¸~½F(A6)*/
-        /*»´«×¨xÅ¦¯e¯f(I1)->¤¤­««×¨xÅ¦¯e¯f(A3)*/
-        /*DM(J1)->DM+¥½ºÝ¾¹©x°IºÜ(A2)*/
+/*æ¨™è¨˜ç–¾ç—…ç—…ç¨‹æœ‰è®ŠåŒ–è€…*/
+        /*æƒ¡æ€§è…«ç˜¤(D2)->è½‰ç§»æ€§è…«ç˜¤(A6)*/
+        /*è¼•åº¦è‚è‡Ÿç–¾ç—…(I1)->ä¸­é‡åº¦è‚è‡Ÿç–¾ç—…(A3)*/
+        /*DM(J1)->DM+æœ«ç«¯å™¨å®˜è¡°ç«­(A2)*/
 DATA CCI.CODE_DIFF;
 	SET CCI.CODE_ALL;
 	IF CODING = 'D2' THEN OUTPUT;
@@ -1010,19 +1010,19 @@ DATA CCI.CODE_ALL_1;
 	BY ID ;
 	IF B;
 	RUN;
-/*§R°£¯e¯fÄY­««×¤wÅÜ¤ÆªÌ*/
+/*åˆªé™¤ç–¾ç—…åš´é‡åº¦å·²è®ŠåŒ–è€…*/
 DATA CCI.CODE_ALL_2;
 	SET CCI.CODE_ALL_1;
 	IF CODING = 'D2' AND CCI_TYPE = 1 THEN DELETE ;
 	IF CODING = 'I1' AND CCI_TYPE = 1 THEN DELETE ;
 	IF CODING = 'J1' AND CCI_TYPE = 1 THEN DELETE ;
 	RUN;
-/*¨ú±oCCI¤À¼Æ*/
+/*å–å¾—CCIåˆ†æ•¸*/
 DATA CCI.CODE_ALL_2;
 	SET CCI.CODE_ALL_2;
 	CCI_SCORE=SUBSTR(CODING,2,1);
 	RUN;
-/*CCI¤À¼Æ¥[Á`*/
+/*CCIåˆ†æ•¸åŠ ç¸½*/
 PROC SORT DATA= CCI.CODE_ALL_2;
 	BY ID CCI_SCORE;
 	RUN;
@@ -1032,7 +1032,7 @@ DATA CCI.CODE_ALL_3;
 	IF FIRST.ID THEN CCI_SUM=0;
 	CCI_SUM+CCI_SCORE;
 	RUN;
-/*¨ú§Àµ§*/
+/*å–å°¾ç­†*/
 PROC SORT DATA = CCI.CODE_ALL_3;
 	BY ID ;
 	RUN;
