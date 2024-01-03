@@ -22,8 +22,9 @@ https://github.com/yamama0120/yamama0120.github.io/blob/main/12_13python%E7%AD%8
 ---
 #### 專案實習:「病歷檔區作業流程再造與⼈⼒配置合適性探討」 
 
-評估實施病歷減量傳送後之影響  
+-評估實施病歷減量傳送後之影響  
 
-![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/image/5555.PNG)
-QR code技術引進成效評估:
+![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/image/5555.PNG)  
+
+-QR code技術引進成效評估:
 ![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/image/6666.PNG)
