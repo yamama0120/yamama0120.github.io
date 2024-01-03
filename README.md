@@ -10,12 +10,13 @@ https://github.com/yamama0120/yamama0120.github.io/blob/main/12_13python%E7%AD%8
 
 #### 用access製作藥局與經銷商資料庫，專案獲課程最高分
 
-![image](https://github.com/yamama0120/yamama0120.github.io/blob/image/main/1111.PNG)
-![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/2222.PNG)
-![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/3333.PNG)
-![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/4444.PNG)
+![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/image/1111.PNG)
+![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/image/222.PNG)
+![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/image/3333.PNG)
+![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/image/4444.PNG)
 
 
 實習時畫流程圖#visio
 ---
-![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/5555.PNG)
+![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/image/5555.PNG)
+![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/image/6666.PNG)
