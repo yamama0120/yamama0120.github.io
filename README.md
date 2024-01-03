@@ -5,7 +5,7 @@
 https://github.com/yamama0120/yamama0120.github.io/blob/main/12_13python%E7%AD%86%E8%A8%98%E6%95%B4%E7%90%86.ipynb
 
 
-大學資料庫管理專案#access
+大學資料庫管理專案#access關聯式資料庫
 ---
 
 #### 用access製作藥局與經銷商資料庫，專案獲課程最高分
@@ -28,3 +28,7 @@ https://github.com/yamama0120/yamama0120.github.io/blob/main/12_13python%E7%AD%8
 
 - QR code技術引進成效評估:
 ![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/image/6666.PNG)
+
+大學論文部分串檔分析語法#SAS
+--
+
