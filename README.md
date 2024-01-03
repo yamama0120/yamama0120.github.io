@@ -15,11 +15,22 @@ https://github.com/yamama0120/yamama0120.github.io/blob/main/12_13python%E7%AD%8
 ![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/image/3333.PNG)
 ![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/image/4444.PNG)
 
+專案實習:「病歷檔區作業流程再造與⼈⼒配置合適性探討」
 
+評估實施病歷減量傳送後之影響:
+組內協調➔安排資料蒐集時段，
+與18位員⼯溝通使其配合統計病歷表單數量 
+流程設計➔與各區負責⼈訪談業務及流程，使⽤visio繪製再造前後細部流程圖
+⼯時評估➔合理統計當前⼈⼒⼯時(預留休息時間等)，並調整分配流程再造後⼈⼒
+QR code技術引進成效評估:
     
 
   
 實習時畫流程圖#visio
 ---
+#### 專案實習:「病歷檔區作業流程再造與⼈⼒配置合適性探討」 
+
+#######  評估實施病歷減量傳送後之影響  
+
 ![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/image/5555.PNG)
 ![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/image/6666.PNG)
