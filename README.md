@@ -15,7 +15,7 @@
 
 3.大學資料庫管理課程#access
 ---
-#### 用access製作「藥局與經銷商資料庫」，專案獲課程最高分
+>「藥局與經銷商資料庫維護及相關查詢」，專案獲課程最高分
 
 
 <img src="https://github.com/yamama0120/yamama0120.github.io/blob/main/image/1111.PNG" width="500px"><img src="https://github.com/yamama0120/yamama0120.github.io/blob/main/image/2222.PNG" width="500px">
@@ -30,7 +30,7 @@
   
 4.專案實習繪製流程圖#visio
 ---
-#### 專案實習:「病歷檔區作業流程再造與⼈⼒配置合適性探討」 
+>「病歷檔區作業流程再造與⼈⼒配置合適性探討」 
 
 - 評估實施病歷減量傳送後之影響  
 
