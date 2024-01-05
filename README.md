@@ -2,7 +2,7 @@
 ==
 近期的python筆記
 ---
-https://github.com/yamama0120/yamama0120.github.io/blob/main/12_13python%E7%AD%86%E8%A8%98%E6%95%B4%E7%90%86.ipynb
+https://github.com/yamama0120/yamama0120.github.io/blob/main/1121213python%20learn.ipynb
 
 畢業論文串檔分析語法(部分)#SAS
 --
