@@ -17,7 +17,7 @@
 ---
 #### 用access製作「藥局與經銷商資料庫」，專案獲課程最高分
 ![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/image/1111.PNG =80%x)
-<img scr"https://github.com/yamama0120/yamama0120.github.io/blob/main/image/1111.PNG"width=100px>
+<img src"https://github.com/yamama0120/yamama0120.github.io/blob/main/image/1111.PNG"width=100px>
 ![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/image/2222.PNG)
 ![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/image/3333.PNG)
 ![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/image/4444.PNG)
