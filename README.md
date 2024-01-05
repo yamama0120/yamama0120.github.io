@@ -16,7 +16,7 @@
 3.大學資料庫管理課程#access
 ---
 #### 用access製作「藥局與經銷商資料庫」，專案獲課程最高分
-![image](<img src="src-url" height="240px" width="160px" />https://github.com/yamama0120/yamama0120.github.io/blob/main/image/1111.PNG)
+![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/image/1111.PNG=80%x)
 ![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/image/2222.PNG)
 ![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/image/3333.PNG)
 ![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/image/4444.PNG)
