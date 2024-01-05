@@ -1,5 +1,7 @@
 紀錄一些曾製作/學習的東西
 ==
+* [近期的python筆記](https://github.com/yamama0120/yamama0120.github.io/blob/main/1121213python%20learn.ipynb)
+
 近期的python筆記
 ---
 https://github.com/yamama0120/yamama0120.github.io/blob/main/1121213python%20learn.ipynb
