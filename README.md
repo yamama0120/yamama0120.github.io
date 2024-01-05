@@ -4,8 +4,13 @@
 ---
 https://github.com/yamama0120/yamama0120.github.io/blob/main/12_13python%E7%AD%86%E8%A8%98%E6%95%B4%E7%90%86.ipynb
 
+畢業論文串檔分析語法(部分)#SAS
+--
+#### 「探討癌症種類與各類型安寧相關性，及對存活時間與費用之影響」
+https://github.com/yamama0120/yamama0120.github.io/blob/main/%E8%AB%96%E6%96%87%E9%83%A8%E5%88%86sas%E8%AA%9E%E6%B3%95.sas
 
-大學資料庫管理專案#access關聯式資料庫
+
+大學資料庫管理課程#access關聯式資料庫
 ---
 
 #### 用access製作「藥局與經銷商資料庫」，專案獲課程最高分
@@ -18,7 +23,7 @@ https://github.com/yamama0120/yamama0120.github.io/blob/main/12_13python%E7%AD%8
 
 
   
-實習時畫流程圖#visio
+專案實習繪製流程圖#visio
 ---
 #### 專案實習:「病歷檔區作業流程再造與⼈⼒配置合適性探討」 
 
@@ -29,7 +34,3 @@ https://github.com/yamama0120/yamama0120.github.io/blob/main/12_13python%E7%AD%8
 - QR code技術引進成效評估:
 ![image](https://github.com/yamama0120/yamama0120.github.io/blob/main/image/6666.PNG)
 
-大學論文部分串檔分析語法#SAS
---
-#### 「探討癌症種類與各類型安寧相關性，及對存活時間與費用之影響」
-https://github.com/yamama0120/yamama0120.github.io/blob/main/%E8%AB%96%E6%96%87%E9%83%A8%E5%88%86sas%E8%AA%9E%E6%B3%95.sas
