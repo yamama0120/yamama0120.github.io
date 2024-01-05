@@ -131,7 +131,7 @@ Where EXISTS ( ) 測試內查詢有無產任何結果
 ```
 
 * Case
-<img src="https://github.com/yamama0120/yamama0120.github.io/blob/main/image/case.PNG" width="500px">
+<img src="https://github.com/yamama0120/yamama0120.github.io/blob/main/image/case1.png" width="500px">
 
 #### DCL control(針對權限做控管):Grant Revoke
 ``` SQL
