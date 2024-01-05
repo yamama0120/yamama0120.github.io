@@ -1,8 +1,8 @@
 紀錄 曾經燃燒生命的專案 & 一些學習筆記
 ==
 
-Learning procedure
-==
+# Learning procedure
+
 * [近期的python筆記](https://github.com/yamama0120/yamama0120.github.io/blob/main/1121213python%20learn.ipynb)
 
 
@@ -12,8 +12,8 @@ Learning procedure
 
 
 
-燃燒生命的專案&作品
-==
+# 燃燒生命的專案&作品
+
 #### 畢業論文串檔分析語法(部分)#SAS
 *[探討癌症種類與各類型安寧相關性，及對存活時間與費用之影響](https://github.com/yamama0120/yamama0120.github.io/blob/main/%E8%AB%96%E6%96%87%E9%83%A8%E5%88%86sas%E8%AA%9E%E6%B3%95.sas)
 
