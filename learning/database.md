@@ -1,107 +1,146 @@
 資料庫
 ==
-#### DB
+## DB
 * 欄=屬性attribute,
 * 每列row=紀錄record
 * 外鍵(foreign key 可為空)去參考 主鍵(primary不可為空) 
 #### 完整性限制
 * 哪3個?  
-	實體完整性：PK具備唯一性且不可為空  
-	參考完整性：用以建立兩table間的關聯(不能沒有對應的data)  
+1. 實體完整性：PK具備唯一性且不可為空  
+2. 參考完整性：用以建立兩table間的關聯(不能沒有對應的data)  
+3. 定義域完整性：每個屬性的值皆符合其範圍
 * 刪的解決方法3個  
-	限制刪除：不允許刪除  
-	連帶刪除：若欲刪的資料有被其他紀錄所參考,則刪除帶有相同參考外來鍵之紀錄。  
-	空值化：” ，將該筆紀錄之相同參考外來鍵設為null
+1. 限制刪除：不允許刪除  
+2. 連帶刪除：若欲刪的資料有被其他紀錄所參考,則刪除帶有相同參考外來鍵之紀錄。  
+3. 空值化：” ，將該筆紀錄之相同參考外來鍵設為null
 #### 關聯式資料庫綱要relational databases schema 
 * 表名稱(a,b,c,d) 
 * 外鍵寫法：地址 參考 c.編號
 
 #### ERD實體關聯圖
 * 以圖形方式表示關聯資料庫的概念化模型,用以描述真實世界中物件與物件之間的關聯性  
-		圖示:實體(方) 關係(菱) 屬性(圓) 鍵值(圓+底線) 基數比(11.1M.MN)
+* 圖示：實體(方) 關係(菱) 屬性(圓) 鍵值(圓+底線) 基數比(11.1M.MN)
 * 屬性：一般、多值、複合(切成更小/\)、衍生(u相乘得總量)
 
-#### 正規化
-將資料拆成數個具有關聯的資料表 
-* 目的：1.減少重複性 2.避免data不一致 3.避免更新異常
-* 正規化  
-1NF:多值
-畫出關聯表～2NF:部分相依(abc但b可決定c)  
-3NF:遞移相依(非pk 決定非pk)  (若無:新增要等key,刪到其他的,修改相關的) 
-BCNF:非pk 決定pk  
-4NF:多值相依  
-* 無損分解：
-分解過程中無任何元素消失.且舊關聯表中所有功能相依性完整保留於新關聯表  
-反正規化：過度正規化時,需查詢具有了大量關聯的資料表  
-	1.易降低執行效率  
-	2.分割過程易造成資料遺失  
-	因此可適當做反項正規化(從目前的正規化退回上一個步驟)  
-————————————————————
-SQL****  哪三個 語法有哪些?
+#### 正規化(將資料拆成數個具有關聯的資料表 )
+* 目的：
+  1.減少重複性 2.避免data不一致 3.避免更新異常
+* 正規化
+	1. 1NF:多值
+	2. 2NF:部分相依(abc但b可決定c)  
+	3. 3NF:遞移相依(非pk 決定非pk)  (若無:新增要等key,刪到其他的,修改相關的) 
+	4. BCNF:非pk 決定pk  
+	5. 4NF:多值相依  
 
-DDL definition(針對table的語法):Create/Alter/Drop
+* 無損分解：分解過程中無任何元素消失.且舊關聯表中所有功能相依性完整保留於新關聯表  
+* 反正規化：過度正規化時,需查詢具有了大量關聯的資料表  
+	1. 易降低執行效率  
+	2. 分割過程易造成資料遺失  
+	因此可適當做反項正規化(從目前的正規化退回上一個步驟)
+
+
+## SQL
+
+#### DDL definition(針對table的語法):Create/Alter/Drop  
 索引：Create Index A on 表名(欄位)
 
-DML manipulation操作 (針對table內容):增 刪 改 查
-增：insert into  表名+(屬性,,,)+values+(‘值’,900)
-改：update 表名+set  屬性=值,,, +where…
+#### DML manipulation操作 (針對table內容):增 刪 改 查   
+增：insert into  表名+(屬性,,,)+values+(‘值’,900)  
+改：update 表名+set  屬性=值,,, +where…  
+刪：delete from表名+where…。不加全刪 
 
-刪：delete from表名+where…。不加全刪
 查：
-只能指定一個欄位去除重複(B)
+* 只能指定一個欄位-例:去除重複的(B)
+```SQL
 SELECT DISTINCT B , A , C FROM TABLE
-in (‘值’) ，is null，and，or 
-查詢相符字元
-where name like ‘鐵%’ ‘鐵_ _’
-照順序排 限制筆數
-order by欄位 +遞增ASC(預設)/DESC.  limit1 
-分成各公司計算:group by 公司，having條件
+條件可加：in ('值') .is null. and. or
+```
 
-計算：總和.平均.字串長
-SUM,AVG,MAX,MIN,LENGTH
+* 查詢相符字元  
+```SQL
+where name like '鐵%'
+where name like '鐵_ _'
+```
+* 照順序排 限制筆數  
+
+```SQL
+order by欄位 +遞增ASC(預設)/DESC  limit 1 
+```
+* 分成各公司計算:
+```SQL
+group by 公司，having條件
+```
+
+
+* 計算：總和.平均.字串長  
+```SQL
+SUM,AVG,MAX,MIN,LENGTH  
 實例:Select SUM (name) from…
-計算非空數:  此紀錄幾筆非空/ 此屬性幾筆非空                   
-count(*)/count(屬性)/count(distinct 屬性) 
+```	
+* 計算非空數:  
+```SQL
+此紀錄幾筆非空/ 此屬性幾筆非空  
+count(*)/count(屬性)/count(distinct 屬性)  
 至少1欄位不為空  count(*) 就算一筆紀錄
-別名&連結
+```
+ 
+
+* 別名&連結
+```SQL
 SELECT A1.Store_Name AS Store,  
 SUM(A1.Sales) AS 'Total Sales'   ->有分開就要引號!
 FROM Store_Information AS A1
-Join
-內部Inner join,依條件。預設
-外部left/right/full outer join (沒有的補null) 
+```
 
-進階
+* Join
+```SQL
+內部 Inner join (會依條件,預設)
+外部 left/right/full outer join (沒有的自動補null) 
+```
+
+* 進階
 時間差 種類:
-Where datediff(“yyyy”,A,B)  ->季q 月m天d 時 h 
-之間:Where 屬性 Between a and b 
-挑出字元輸出:
-SUBSTR(屬性,從哪始,長度):
-合併CONCAT
-取代:b改c :
-Replace (屬性,’b’,’c’)  
+```SQL
+Where datediff (“yyyy”,A,B)  (OTHER:季q 月m 天d 時h)
+之間:Where 屬性 Between a and b
+```
+* OTHER :
+```SQL
+挑出字元輸出:SUBSTR (屬性,從哪始,長度):
+合併:CONCAT
+取代:Replace (屬性,’b’,’c’)  ->b改c 
 
-Union
-不重複,聯集union連結兩結果
+```
+
+
+* Union聯集
+```SQL
+union連結兩結果,不重複
 union all 全列,可重複
-交集Intersect 
+(交集Intersect )
+```
 
-巢狀查詢 (效率較join好) 有時就不用join
-<.>.=.not.<= ,like 常搭配in/any/all 
->all  >any
-標準子查詢、關聯子查詢2表以上
-Where EXISTS ( )測試內查詢有無產任何結果
-有>系統執行外查詢中,不理會內查詢條件
-沒有>整個 SQL 語句不會產生任何結果
-Case
-￼
-DCL control(針對權限做控管):Grant Revoke
-grant權on表名(屬性) to誰identified by ‘密‘
-revoke …on….from誰
-建.增.刪.改.查.index.execute.usage登入
-——————————————————————————
+* 巢狀查詢 (效率較join好) 有時就不用join
+```SQL
+<.>.=.not.<= ,like 常搭配in/any/all (>all  >any)
 
-資訊安全：
+標準子查詢、關聯子查詢(2表以上)
+Where EXISTS ( ) 測試內查詢有無產任何結果  
+	有->系統執行外查詢中,不理會內查詢條件
+	沒有->整個 SQL 語句不會產生任何結果
+```
+
+* Case
+
+
+#### DCL control(針對權限做控管):Grant Revoke
+``` SQL
+grant 權 on 表名(屬性) to 誰 identified by "密"
+revoke 權 on表名(屬性) from誰
+權：INSERT.UPDATE.DELETE.UPDATE.SELECT.index.execute.usage
+```
+
+## 資訊安全
 SQL injection：
 程式設計不良，輸入時夾帶的惡意指令，被認為是正常指令而執行，遭受破壞和入侵
 對資料庫的危害：
