@@ -4,6 +4,7 @@
 ## 1.Learning procedure
 
 * [近期的python筆記](https://github.com/yamama0120/yamama0120.github.io/blob/main/1121213python%20learn.ipynb)
+* [資料庫概念筆記](https://github.com/yamama0120/yamama0120.github.io/blob/main/learning/database.md)
 
 
 
