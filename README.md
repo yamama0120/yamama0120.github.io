@@ -1,10 +1,10 @@
-紀錄一些曾製作/學習的東西
+紀錄 曾經燃燒生命製作的東西 & 學習筆記
 ==
+
+For程式
+---
 * [近期的python筆記](https://github.com/yamama0120/yamama0120.github.io/blob/main/1121213python%20learn.ipynb)
 
-近期的python筆記
----
-https://github.com/yamama0120/yamama0120.github.io/blob/main/1121213python%20learn.ipynb
 
 畢業論文串檔分析語法(部分)#SAS
 --
