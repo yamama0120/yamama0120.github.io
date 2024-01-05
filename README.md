@@ -7,8 +7,8 @@
 
 #### 畢業論文串檔分析語法(部分)#SAS
 * [探討癌症種類與各類型安寧相關性，及對存活時間與費用之影響](https://github.com/yamama0120/yamama0120.github.io/blob/main/sas%20syntax%20.sas)
-
-  
+#### 專案(施工中)
+* [小農吉米_農產品訂購管理系統](https://github.com/yamama0120/project)
 ## 2.Learning procedure
 
 * [近期的python筆記](https://github.com/yamama0120/yamama0120.github.io/blob/main/Programming%20syntax%20/1121213python%20learn.ipynb)
