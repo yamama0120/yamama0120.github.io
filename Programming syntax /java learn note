@@ -1,0 +1,55 @@
+JAVA (待整理）
+- [x] 類別格式3個 constructor/attribute/method 
+    - [x] 無解構子->garbage collection  (JVM自動回收,不需programmer)
+    - [ ] 無指標
+
+- [ ] Class A …主程式：public static void main (string[] xxx)…
+    - [ ] person p 物件宣告
+    - [ ] Superman s =new superman()子類別物件產生
+    - [ ] P=s   p.walk();
+- [x] 等同於person p=new Superman()
+    - [x] 子繼父- 將子類別的物件視為父類別型態 upcasting
+        - [x] Superman p=new person()父繼子(x)
+
+例外處理：
+- [x] 讓程式不因意外事件導致停止 語法?
+- [x] try…catch(_____exception e)…finally
+- [x] try必有,catch finally 可擇一寫 ,finally必做
+    - [ ] Catch-有錯才跑 ,發生錯直接進catch
+    - [ ] 無catch時錯誤發生 (exception occurs)
+        - [ ] 做finally後 ,exception 外拋(runtime exception)
+
+Keyword
+- [ ] Static：
+將多次會使用的屬性/行為,宣告成static variable.一開始載入men-(提升men 效率)
+- [ ] Static method
+    - [x] 只能使用static屬性/行為，(因x未產生/多個x->不知跟誰 ,compile error)
+    - [ ] 無法overriding-(因屬class,compile 已決定-無法做dynamic binding )
+- [x] final：
+    - [x] final class-
+        - [x] 無法被繼承
+    - [x] final method-
+        - [x] 無法被overriding 
+    - [x] final attribute-
+        - [x] 為常數
+
+抽象方法? 抽象類別?
+- [x] 抽象方法：定義類別時，僅以abstract 宣告方法而不實作
+- [x] 抽象類別：類別中含有至少1抽象方法
+    - [x] 其不能產生實體(不可new)
+    - [x] 僅能擴充，並於擴充後將抽象方法實作(具象類別)
+        - [ ] 擇一：1.實作掉 2.變抽象class. How做?
+
+Interface介面:
+- [x] 用以模擬出多重繼承效果
+    - [x] 不可new出物件(也沒建構子)
+    - [x] 同ㄧ類別實作多個介面
+- [x] 介面格式：
+interface 介面名{
+屬性:public static final att名
+方法:public abstract  return-type  method名 () }  ->抽象方法
+
+- [x] 同一類別實作多介面
+Class Superman extends person implements flyer,….,….,…{
+Public void fly(){…..記得實作完}
+}
