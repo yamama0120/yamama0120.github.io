@@ -1,0 +1,169 @@
+C
+--
+
+4種參數傳遞 ? ap fp? 
+- [x] Actual ? formal ? parameter 
+- [x] Side effect  fp更動影響ap
+    - [x] Value.
+    - [x] address.
+    - [x] name.
+    - [x] value-result.
+
+
+
+
+
+常數1，變數2，優先性
+- [x] 常數constant
+於compile 即轉成object code的一部分 不占記憶體
+- [x] 變數local
+在函式內宣告的變數,
+記憶體隨函式動態建立及釋放,空間運用佳
+生命週期僅限函式執行期間,函式執行完畢即回收
+- [x] 變數global.static
+全域變數，於程式載入時配置記憶體,
+static修飾字宣告的變數 (第一次遇其宣告列才配置記憶體)
+程式結束才清除，空間運用差但執行效能佳
+- [x] 優先性:
+函式內區域變數優先性高於全域變數,
+若無區域則選用全域變數
+
+
+- [x] Data type :char<短<整<長<float<double
+    - [x] 字串 整數 浮點數  字元-想英文
+    - [x] /取商、%取餘 、
+    - [x] %d %c %f %s
+
+- [x] Shortcut 
+前有結果後不做(布林運算最佳化)
+
+選擇
+- [x] If else若無括號? 
+    - [x] 下個statement .If /else if  /else if /else….
+- [x] Switch (x); 
+    - [x] case 1 ;default ;
+    - [x] 只比一次 ,做符合的case後,往下依序執行直到break/block
+
+重複loop
+- [x] 前測成立才做:For (A;B;C){…}/ While (condition ){…}
+- [x] 後測Do{…}while(condition)
+- [x] Break/continue
+    - [x] 離開迴圈/  後面不做跳下輪
+
+- [x] 陣列int A[5] ;
+    - [x] int *p;   /P=A才能更改/ ++p往下一格
+
+- [x] 字串 char *s =“hello” （雙引）
+    - [x] Printf (%s,s+2)=llo
+    - [x] Printf (%c,*(s+4))=o
+—————-——————-——————-——————-—
+OO
+--
+
+- [x] Why o.o 3個
+
+- [x] OO四特色
+
+- [x] 繼承有存取權限縮
+    - [x] (子類別權限不大於父)
+    - [x] Public Protected private
+- [x] OO物件和類別
+    - [x] 抽象化1定義
+    - [x] 並利用類別可產生物件,而每個物件有其所屬的屬性及行為。
+    - [x] 在物件導向中,抽象化的物件彼此可相互運作
+—————-——————-——————-———
+
+C++
+--
+
+- [x] 類別格式4個 物件宣告
+Constructor/destructor/attribute/operation
+- [x] person p;  p.height=90
+
+建構子xA()，解構子~A(x)
+- [x] 建構:於物件產生時呼叫,做初始化之用,可有多個
+    - [x] no return type ,名稱同class name 
+    - [x] 若無建構 
+        - [x] 補default constructor C+: A(){}，JAVA: public A(){}
+- [x] 解構:於物件回收時呼叫,只能一個 
+    - [x] ()參數串列必為空
+- [x] 物件生命循環
+產生:配mem. 建構子 ，回收:解構.clear mem.。
+
+
+Overriding 覆寫vs overloading 多載.超荷
+- [x] Overriding:子類別會將父類別的方法內容,重新定義以符合自身所需
+    - [x] return type+名稱+參數串列一致 void walk ()
+- [x] Overloading:指藉由接受的參數串列之數量或型別不同,來共用相同的函式名稱
+
+
+—————-——————-————————————-—
+JAVA 
+--
+
+- [x] 類別格式3個 constructor/attribute/method 
+    - [x] 無解構子->garbage collection  (JVM自動回收,不需programmer)
+    - [x] 無指標
+
+- [x] Class A …主程式：public static void main (string[] xxx)…
+    - [x] person p 物件宣告
+    - [x] Superman s =new superman()子類別物件產生
+    - [x] P=s   p.walk();
+- [x] 等同於person p=new Superman()
+    - [x] 子繼父- 將子類別的物件視為父類別型態 upcasting
+        - [x] Superman p=new person()父繼子(x)
+
+例外處理：
+- [x] 讓程式不因意外事件導致停止 語法?
+- [x] try…catch(_____exception e)…finally
+- [x] try必有,catch finally 可擇一寫 ,finally必做
+    - [x] Catch-有錯才跑 ,發生錯直接進catch
+    - [x] 無catch時錯誤發生 (exception occurs)
+        - [ ] 做finally後 ,exception 外拋(runtime exception)
+
+Keyword
+- [x] Static：
+將多次會使用的屬性/行為,宣告成static variable.一開始載入men-(提升men 效率)
+- [x] Static method
+    - [x] 只能使用static屬性/行為，(因x未產生/多個x->不知跟誰 ,compile error)
+    - [x] 無法overriding-(因屬class,compile 已決定-無法做dynamic binding )
+- [x] final：
+    - [x] final class-
+        - [x] 無法被繼承
+    - [x] final method-
+        - [x] 無法被overriding 
+    - [x] final attribute-
+        - [x] 為常數
+
+抽象方法? 抽象類別?
+- [x] 抽象方法：定義類別時，僅以abstract 宣告方法而不實作
+- [x] 抽象類別：類別中含有至少1抽象方法
+    - [x] 其不能產生實體(不可new)
+    - [x] 僅能擴充，並於擴充後將抽象方法實作(具象類別)
+        - [ ] 擇一：1.實作掉 2.變抽象class. How做?
+
+Interface介面:
+- [x] 用以模擬出多重繼承效果
+    - [x] 不可new出物件(也沒建構子)
+    - [x] 同ㄧ類別實作多個介面
+- [x] 介面格式：
+interface 介面名{
+屬性:public static final att名
+方法:public abstract  return-type  method名 () }  ->抽象方法
+
+- [x] 同一類別實作多介面
+Class Superman extends person implements flyer,….,….,…{
+Public void fly(){…..記得實作完}
+}
+
+
+—————————————————————————
+- [x] 單一繼承 多重繼承 
+--
+
+多重：命名衝突 [都有fly()]、重覆繼承問題
+
+
+- [x] 多型實作(p34 C+ 、P46 JAVA) 
+- [x] C+ ：virtual
+- [x] JAVA：產物件 後面有()
