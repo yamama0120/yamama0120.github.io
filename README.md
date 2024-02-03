@@ -11,7 +11,8 @@
 * [小農吉米_農產品訂購管理系統](https://github.com/yamama0120/project)
 ## 2.Learning procedure
 
-* [近期的python筆記](https://github.com/yamama0120/yamama0120.github.io/blob/main/Programming%20syntax%20/1121213python%20learn.ipynb)
+* [近期的python筆記(1/2)](https://github.com/yamama0120/yamama0120.github.io/blob/main/Programming%20syntax%20/1121213python%20learn.ipynb)
+* [近期的python筆記(2/2)]()
 * [資料庫概念筆記](https://github.com/yamama0120/yamama0120.github.io/blob/main/learning/database.md)
 * [some資結演算法概念(待整理)](https://github.com/yamama0120/yamama0120.github.io/blob/main/learning/data%20structure.md)
 
